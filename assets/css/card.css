@@ -1,0 +1,142 @@
+/* CARD */
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 80px -15px 0;
+}
+
+.card__item{
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.card__inner{
+    background-color: #95e1d3;
+    position: relative;
+}
+
+
+.card__item:hover .card__img{
+    transform: translate3d(-12px, -8px, 0);
+}
+
+.card__item:hover .card__img img{
+    opacity: 0.1;
+}
+
+.card__item:hover .card__text{
+    opacity: 1;
+}
+
+.card__img{
+    background: linear-gradient(to bottom, #f38181,#fce38a);
+    transition: transform .3s linear;    
+}
+
+.card__img img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .3s linear;
+}
+
+.card__text{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.card__text-icons{
+    margin-bottom: 5px;
+}
+
+.card__info{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.card__name{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card__position{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #999;
+}
+
+/* SOCIAL */
+
+.social{
+    display: flex;
+}
+
+.social__item{
+    width: 55px;
+    height: 55px;
+    border-right: 1px solid #f38181;
+    background-color: #fce38a;
+    padding: 12px 10px;
+    font-size: 25px;
+    line-height: 1;
+    color: #f38181;
+    transition: background .3s linear, color .3s linear;
+}
+
+.social__item:last-child{
+    border: 0;
+}
+
+.social__item:hover{
+    color: #fff;
+    background: #f38181;
+}
+
+/* MEDIA */
+
+@media (max-width:1230px){
+    
+}
+
+@media (max-width:992px){
+    
+}
+
+@media (max-width:768px){
+    .card{
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .card__item{
+        width: 100%;
+        max-width: 410px; 
+        margin-bottom: 30px;
+    }
+
+    .card__item:last-child{
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width:576px){
+    .card{
+        margin-top: 30px;
+    }
+
+}

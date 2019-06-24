@@ -1,0 +1,67 @@
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+html{
+    font: 15px 'Montserrat';
+    font-weight: 400;
+    color: #fff;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container{
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+/* PAGE-WRAPPER */
+.page-wrapper{
+    overflow: hidden;
+}
+
+/* MEDIA */
+
+@media (max-width:1230px){
+    
+}
+
+@media (max-width:992px){
+    
+}
+
+@media (max-width:768px){
+
+}
+
+@media (max-width:576px){
+
+}

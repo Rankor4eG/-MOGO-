@@ -1,0 +1,152 @@
+/* BLOG */
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog__item{
+    width: 31.5%;
+}
+
+.blog__item:last-child{
+    margin-right: 0;
+}
+
+.blog__header{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.blog__photo{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__date{
+    width: 60px;
+    height: 70px;
+    background-color: #95e1d3;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__date-day{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+}   
+
+.blog__date-month{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.blog__content{    
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+
+.blog__title{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.blog__title a{
+    color: inherit;
+}
+
+.blog__text{
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-weight: 400;
+}
+
+.blog__title a:hover{
+    font-weight: 700;
+}
+
+.blog__footer{
+    display: flex;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.blog__footer-item{
+    display: flex;
+    margin-right: 20px;
+}
+
+.blog__footer-item i{
+    color: #95e1d3;
+    margin-right: 10px;
+}
+
+/* MEDIA */
+
+@media (max-width:1230px){
+    
+}
+
+@media (max-width:992px){
+    .blog{
+        justify-content: center;
+    }
+    .blog__item{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    .blog__item:first-child{
+        margin-right: 30px;
+    }
+    .blog__item:last-child{
+        margin-bottom: 0;
+    }
+    .blog__content{
+        max-width: 400px;
+    }
+}
+
+@media (max-width:768px){
+    .blog{
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .blog__item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .blog__item:first-child{
+        margin-right: 0;
+    }
+    .blog__item:last-child{
+        margin-bottom: 0;
+    }
+   
+}
+
+@media (max-width:576px){
+
+}
+
+@media (max-width:400px){
+    .blog{
+        padding: 0 12px;
+    }
+}

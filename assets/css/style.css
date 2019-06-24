@@ -1,0 +1,86 @@
+@import "base.css";
+@import "intro.css";
+@import "header.css";
+@import "section.css";
+@import "statistics.css";
+@import "card.css";
+@import "services.css";
+@import "logos.css";
+@import "wedo.css";
+@import "reviews.css";
+@import "works.css";
+@import "clients.css";
+@import "blog.css";
+@import "map.css";
+@import "footer.css";
+
+/* DEVICES */
+
+.devices{
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.devices__item--iphone{
+    position: absolute;
+    right: 0;
+    bottom: -85px;
+}
+
+/* MEDIA */
+
+@media (max-width:1230px){
+    
+}
+
+@media (max-width:992px){
+    
+}
+
+@media (max-width:768px){
+    .devices{
+        max-width: 400px;
+    }
+}
+
+@media (max-width:576px){
+    .devices{
+        max-width: 300px;
+    }
+
+    .devices__item--iphone{
+        width: 170px;
+        bottom: -50px;
+        right: -60px;
+    }
+}
+
+@media (max-width:444px){
+    .devices{
+        max-width: 240px;
+    }
+
+    .devices__item--iphone{
+        width: 130px;
+        bottom: -30px;
+        right: -40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
